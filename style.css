@@ -1,0 +1,451 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:medium);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:bold);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+	margin:0px;
+}
+
+h1 {
+    font-family: 'Montserrat';
+    font-size: 4.5em;
+    font-weight: 900;
+    color:#F26322;
+    margin: 0px;
+    letter-spacing:-1px;
+}
+
+h1.acknowledgements {
+	font-size:3em;
+}
+
+h2 {
+    font-family: 'Montserrat';
+ 	padding: 30px 0px;
+    font-weight: 100;
+    color: #F26322;
+    font-size: 1.2em;
+}
+
+h2.border {
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: whitesmoke;
+}
+
+h3 {
+    font-family: 'Montserrat';
+ 	padding: 10px 0px;
+    font-weight: 900;
+    color: #F26322;
+    font-size: 1.4em;
+}
+
+p {
+    font-family: 'Open Sans';
+    font-weight: 100;
+    font-size: 1em;
+    line-height: 1.8;
+    color: #464646;
+}
+
+p.drop-cap:first-letter {
+    font-size: 3em;
+    float: left;
+    margin-top: -0.3em;
+    margin-right: .3em;
+    margin-bottom: -0.7em;
+}
+
+p.thanks {
+	font-family: 'Open Sans';
+    font-weight: 100;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #464646;
+}
+
+p.whiteline {
+	border-bottom-style: solid;
+	border-color: white;
+	padding: 0px 0px 20px 0px;
+}
+
+span.quotes {
+	font-family:;
+	font-size:3.2em; 
+	position:absolute;
+	margin: -11px 0px 0px 0px;
+	letter-spacing: -3px;
+}
+
+.grey-underline {
+    border-bottom-style: solid;
+	border-color: whitesmoke;
+	padding: 0px 0px 20px 0px;
+	color: #F26322;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #2f2f2f;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    box-shadow: 20px 0px 18px 15px black;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    margin-bottom:-5px;
+}
+
+img.nav-images {
+	width:300px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .sidenav-top .closebtn {
+    position: absolute;
+    top: 0;
+    left: 55%;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #F26322;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.sidenav-top {
+	background-color: #e2e2e2;
+	padding:20px;
+	position:sticky;
+	top:0;
+	width:300px;
+}
+
+.sidenav-top-row {
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	padding-right: 35px;
+	padding-top: 35px;
+}
+
+p.sidenav-top-caps {
+	text-transform:uppercase;
+	font-size:10px;
+	letter-spacing: 2px;
+	margin-bottom: 6px;
+}
+
+p.small-title {
+	margin-top:-10px;
+	letter-spacing: 1px;
+}
+
+.sidebar-top-right {
+	padding-right:20px;
+}
+
+.sidenav-top-logo img {
+	width: 120px;
+    padding-top: 15px;
+
+}
+
+.sidenav-top h3 {
+	padding: 0px;
+	margin: 10px 0px;
+}
+
+.navbar {
+	overflow: hidden;
+    background-color: #F26322;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 1;
+    box-shadow: 0px -25px 50px 20px black;
+    display:flex;
+}
+
+.navbar-text {
+	font-family: 'Montserrat';
+    font-weight: 900;
+    color:white;
+}
+
+.navbar-donate-btn {
+	font-family: 'Montserrat';
+}
+
+.left-nav{
+	flex:1;
+	font-size: 0.9em;
+	text-align:left;
+	padding-left: 20px;
+    padding-top: 8px
+}
+
+.center-nav {
+	flex:1;
+	padding-top: 8px;
+	padding-left: 6%;
+}
+
+.right-nav {
+	flex:1;
+	font-size: 0.9em;
+	text-align:right;
+	padding-top: 6px;
+	padding-right: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .navbar {
+        font-size:0.8em;
+    }
+}
+
+.row {
+	display:flex;
+}
+
+.text-col {
+	flex:1;
+}
+
+.text-right{
+	padding: 30px 330px 30px 50px;
+}
+
+.text-left{
+	padding: 30px 50px 30px 330px;
+}
+
+.backup-logo img {
+    width: 65%;
+    margin-top: 110px;
+    margin-left: 15%;
+}
+
+.thumb-image img {
+	width:140px;
+}
+
+.title-image-left {
+	flex:1;
+	height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(title-image-left.jpg);
+    background-position-y: bottom;
+    min-height: 720px;
+}
+
+.title-image-right {
+    flex: 2;
+    height: 100vh;
+    background-color: grey;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(title-image-right.jpg);
+}
+
+.image-col-section {
+	flex:1;
+}
+
+.sticky-section-2 {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 10px;
+	height:100vh;
+	background-color:grey;
+	background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url("welcome.jpg");
+}
+
+.infographic-col {
+	flex:1;
+}
+
+.infographic-col-right {
+	flex:1;
+	background-color:#f3f3f3;
+}
+
+.infographic-title {
+	position: sticky;
+	position: -webkit-sticky;
+    top: 0;
+}
+
+.infographic-title h1 {
+	text-align:right;
+	padding: 80px 50px 50px 50px;
+	line-height: 1.2em;
+}
+
+.infographic-title h2 {
+	text-align:right;
+    border-top-style: solid;
+    border-color: whitesmoke;
+    margin-top: -20px;
+    margin-left: 70%;
+    margin-right: 7%;
+}
+
+h2.infographic-title-wide {
+	margin-left:40%!important;
+}
+
+.infographic-content {
+	background-color:#f3f3f3;
+	padding: 50px;
+	display:grid;
+	grid-template-columns:1fr 1fr;
+}
+
+.infographic-blob img {
+	height:160px;
+	width:auto;
+}
+
+.infographic-blob p {
+	padding: 10px 0px;
+}
+
+.infographic-blob {
+    border-bottom-style: solid;
+    border-color: white;
+    margin: 20px 25% 40px 20px;
+}
+
+.infographic-blob-highlight img {
+	width:100%;
+}
+
+.infographic-blob-highlight p {
+	font-family: 'Montserrat';
+	font-weight:700;
+	padding: 20px 20px 20px 20px;
+    background-color: #F26322;
+    margin: -3px -70px 0px 0px;
+    color: white;
+    font-size: 1.1em;
+    letter-spacing: 0.2px;
+}
+
+.infographic-blob-highlight {
+    margin: 20px 50% 40px 20px;
+}
+
+.sticky-section-4 {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 10px;
+	height:100vh;
+	background-color:grey;
+	background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url("mirka.png");
+}
+
+.sticky-section-5 {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 10px;
+	height:100vh;
+	background-color:grey;
+	background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url("chloe.png");
+}
+
+.sticky-section-6 {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 10px;
+	height:100vh;
+	background-color:grey;
+	background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url("kevin-1.jpg");
+}
+
+.sticky-section-7 {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 10px;
+	height:100vh;
+	background-color:grey;
+	background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url("craig.jpg");
+}
+
+.sticky-section-8 {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 10px;
+	height:100vh;
+	background-color:grey;
+	background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url("elinor.jpg");
+}
+
+.sticky-section-9 {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 10px;
+	height:100vh;
+	background-color:grey;
+	background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url("catherine.jpg");
+}
+
+.sticky-section-10 {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 10px;
+	height:100vh;
+	background-color:grey;
+	background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url("kevin-2.jpg");
+}
+
+.sticky-section-13 {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 10px;
+	height:100vh;
+	background-color:grey;
+	background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url("plans.jpg");
+}
+
